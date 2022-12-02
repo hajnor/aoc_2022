@@ -1,0 +1,1 @@
+start cmd.exe /K "tsc aoc.ts && node aoc.js"
