@@ -1,6 +1,12 @@
 import { readFileSync } from 'fs';
 
-const file = readFileSync('./input.txt', 'utf-8');
-const input = file.split(/\r?\n/);
+printResult(getInput());
 
-console.log(input);
+function getInput(): string[] {
+    const file = readFileSync('./input.txt', 'utf-8');
+    return file.split(/\n/);
+}
+
+function printResult(input: string[]): void {
+    console.log();
+}
