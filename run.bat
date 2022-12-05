@@ -1,1 +1,1 @@
-start cmd.exe /K "tsc aoc.ts && node aoc.js"
+start cmd.exe /K "tsc && node aoc.js"
