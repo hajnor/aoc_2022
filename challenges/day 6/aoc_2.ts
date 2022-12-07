@@ -16,6 +16,7 @@ function printResult(file: string): void {
             const regex = new RegExp(potentialMessageMarker[j] + ".*" + potentialMessageMarker[j]);
             if (regex.exec(potentialMessageMarker)) {
                 isMessageMarker = false;
+                break;
             }
         }
 

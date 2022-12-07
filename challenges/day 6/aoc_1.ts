@@ -16,6 +16,7 @@ function printResult(file: string): void {
             const regex = new RegExp(potentialPacketMarker[j] + ".*" + potentialPacketMarker[j]);
             if (regex.exec(potentialPacketMarker)) {
                 isPacketMarker = false;
+                break;
             }
         }
 
